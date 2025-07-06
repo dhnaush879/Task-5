@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1>🛒 My Shop</h1>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <article class="product">
+        <img src="assets/images/product1.jpg" alt="Product 1" loading="lazy" />
+        <h2>Smart Phone</h2>
+        <p>₹34499</p>
+        <button onclick="addToCart('Smart Phone', 34499)">Add to Cart</button>
+      </article>
+
+      <article class="product">
+        <img src="assets/images/product2.jpg" alt="Product 2" loading="lazy" />
+        <h2>Shoes</h2>
+        <p>₹2299</p>
+        <button onclick="addToCart('Shoes', 2299)">Add to Cart</button>
+      </article>
+    </section>
+<article class="product">
+        <img src="assets/images/product2.jpg" alt="Product 2" loading="lazy" />
+        <h2>Laptop</h2>
+        <p>₹100099</p>
+        <button onclick="addToCart('Laptop', 100099)">Add to Cart</button>
+      </article>
+    </section>
+
+    <aside class="cart">
+      <h3>🧺 Cart</h3>
+      <ul id="cart-items"></ul>
+    </aside>
+  </main>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
